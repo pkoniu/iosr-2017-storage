@@ -7,7 +7,9 @@
     "start:debug": "node inspect ./bin/www",
     "db:seed": "node ./seed/seed.js",
     "db:drop": "node ./seed/drop.js",
-    "db:reset": "npm run db:drop && npm run db:seed"
+    "db:reset": "npm run db:drop && npm run db:seed",
+    "test": "mocha",
+    "infra": "node infrastructure/heroku"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -15,7 +17,9 @@
     "debug": "~2.2.0",
     "dotenv": "^4.0.0",
     "express": "~4.14.0",
+    "heroin-js": "^1.20.1",
     "lodash": "^4.17.4",
+    "mocha": "^4.1.0",
     "mongodb": "^2.2.33",
     "morgan": "~1.7.0"
   }
