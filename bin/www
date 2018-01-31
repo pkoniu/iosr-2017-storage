@@ -21,7 +21,6 @@ const MongoClient = require('mongodb').MongoClient;
 const mongoUrl = createMongoUrl();
 
 const Eureka = require('eureka-js-client').Eureka;
-
 const client = new Eureka({
       instance: {
         app: EUREKA_APP_NAME,
