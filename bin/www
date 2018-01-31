@@ -32,6 +32,9 @@ const client = new Eureka({
         dataCenterInfo: {
           name: 'MyOwn'
         },
+        statusPageUrl: EUREKA_APP_HOST_NAME,
+        healthCheckUrl: EUREKA_APP_HOST_NAME,
+        homePageUrl: EUREKA_APP_HOST_NAME,
       },
       eureka: {
         serviceUrls: {
