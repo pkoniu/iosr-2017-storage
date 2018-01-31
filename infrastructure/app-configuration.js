@@ -10,7 +10,11 @@ module.exports = {
         maintenance: false,
         stack: 'heroku-16',
         config_vars: {
-            NODE_ENV: 'staging'
+            NODE_ENV: 'staging',
+            EUREKA_APP_HOST_NAME: 'http://iosr2017storage-staging.herokuapp.com',
+            EUREKA_APP_IP_ADDR: '127.0.0.1',
+            EUREKA_APP_VIP_ADDR: 'http://iosr2017storage-staging.herokuapp.com',
+            EUREKA_SERVER_URL: 'https://user:iosr2017@iosr2017eureka-staging.herokuapp.com/eureka/apps'
         },
         addons: {
             librato: {
@@ -35,7 +39,11 @@ module.exports = {
         maintenance: false,
         stack: 'heroku-16',
         config_vars: {
-            NODE_ENV: 'production'
+            NODE_ENV: 'production',
+            EUREKA_APP_HOST_NAME: 'http://iosr2017storage-production.herokuapp.com',
+            EUREKA_APP_IP_ADDR: '127.0.0.1',
+            EUREKA_APP_VIP_ADDR: 'http://iosr2017storage-production.herokuapp.com',
+            EUREKA_SERVER_URL: 'https://user:iosr2017@iosr2017eureka-production.herokuapp.com/eureka/apps'
         },
         addons: {
             librato: {
